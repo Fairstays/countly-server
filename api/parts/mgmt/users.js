@@ -185,11 +185,11 @@ usersApi.createUser = function(params) {
             },
             'password': {
                 'required': true,
-                'type': 'String',
-                'min-length': plugins.getConfig("security").password_min,
-                'has-number': plugins.getConfig("security").password_number,
-                'has-upchar': plugins.getConfig("security").password_char,
-                'has-special': plugins.getConfig("security").password_symbol
+                'type': 'String'
+                // 'min-length': plugins.getConfig("security").password_min,
+                // 'has-number': plugins.getConfig("security").password_number,
+                // 'has-upchar': plugins.getConfig("security").password_char,
+                // 'has-special': plugins.getConfig("security").password_symbol
             },
             'email': {
                 'required': true,
